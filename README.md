@@ -174,3 +174,26 @@ cv2.destroyAllWindows()
 picam2.close()
 
 ```
+
+# Airplane detection 
+![WhatsApp Image 2024-06-12 at 00 18 45_7918e933](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/254153cc-7ef9-43e8-ad6f-c6a5ba0080fd)![WhatsApp Image 2024-06-12 at 00 18 47_d5ee83da](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/714e870e-2306-4809-84f1-1b39eefdd49a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
