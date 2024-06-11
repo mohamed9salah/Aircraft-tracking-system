@@ -8,8 +8,25 @@ The Raspberry Pi 4 Model B provides a high-performance platform at a fraction of
 
 # SolidWorks Design
 In our project, we utilized SolidWorks to design a tower that holds camera apertures and the airport building. This design phase was crucial in ensuring that the physical components of our tracking system were optimally placed and secured for effective operation.
-- Tower Design: The tower was meticulously designed to support multiple camera apertures, ensuring a wide range of visibility for aircraft tracking. The structural integrity of the tower was a primary focus to withstand various environmental conditions and provide stable camera support. ![WhatsApp Image 2024-06-12 at 00 38 35_f7ff1cb2](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/857e3573-b6aa-4284-901c-5ae2c3cc7726)
+- Tower Design: The tower was meticulously designed to support multiple camera camera apparatus, ensuring a wide range of visibility for aircraft tracking. The structural integrity of the tower was a primary focus to withstand various environmental conditions and provide stable camera support. ![WhatsApp Image 2024-06-12 at 00 38 35_f7ff1cb2](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/857e3573-b6aa-4284-901c-5ae2c3cc7726)
 - Airport Building: The airport building was designed to integrate seamlessly with the tower, providing a centralized location for system operations and monitoring. This building houses the necessary hardware, including servers, monitors, and communication equipment, to facilitate efficient tracking and data processing. ![WhatsApp Image 2024-06-12 at 00 39 43_93d6c5f0](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/10bd7a46-571b-40db-ab9e-5205ffc3c652)
 - By creating a detailed simulation environment in SolidWorks, we were able to visualize and test the placement of all components within the system. This simulation helped in identifying potential design flaws, optimizing camera angles, and ensuring that all equipment was correctly positioned for maximum efficiency.
   ![WhatsApp Image 2024-06-12 at 00 41 14_f519ebe4](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/5b642ad3-508b-4cd4-b363-5854d0a681de)
+
+# Servo motors with camera apparatus 
+Our aircraft tracking system employs two servo motors, each with 2-axis motion range, to control the camera apparatus. These servo motors are crucial for achieving precise and responsive camera positioning, enabling effective tracking of aircraft movements. 
+- Precise Control: The servo motors provide precise control over the camera angles, allowing for accurate and smooth tracking of aircraft. This precision is essential for maintaining a clear and consistent view of the aircraft at all times.
+- Wide Range of Motion: With 2-axis motion range, the servo motors offer extensive coverage, ensuring that the cameras can be adjusted to capture a wide field of view. This capability enhances the system's ability to track aircraft across various trajectories.
+- Integration with Camera Apparatus: The servo motors are directly connected to the camera apparatus, allowing for seamless integration and synchronized movement. This setup ensures that the cameras move swiftly and accurately in response to the tracking system's commands.
+![WhatsApp Image 2024-06-12 at 00 55 16_a81bdc11](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/ea491f3b-2a41-4453-b2ef-16f204e09929)
+
+
+
+
+
+
+
+
+
+
 
