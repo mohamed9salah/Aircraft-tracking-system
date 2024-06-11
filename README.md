@@ -22,6 +22,53 @@ Our aircraft tracking system employs two servo motors, each with 2-axis motion r
 - Integration with Camera Apparatus: The servo motors are directly connected to the camera apparatus, allowing for seamless integration and synchronized movement. This setup ensures that the cameras move swiftly and accurately in response to the tracking system's commands.
 ![WhatsApp Image 2024-06-12 at 00 55 16_a81bdc11](https://github.com/mohamed9salah/Aircraft-tracking-system/assets/138705468/ea491f3b-2a41-4453-b2ef-16f204e09929)
 
+# CODES TO CONTROL THE CAMERA ON RASPBERRY PI
+
+import cv2
+import numpy as np
+import time
+from picamera2 import Picamera2
+import RPi.GPIO as GPIO
+from gpiozero import Servo
+
+SERVO_PIN_X = 14
+SERVO_PIN_Y = 15
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(SERVO_PIN_X, GPIO.OUT)
+GPIO.setup(SERVO_PIN_Y, GPIO.OUT)
+
+servoX = GPIO.PWM(SERVO_PIN_X, 50)
+servoY = GPIO.PWM(SERVO_PIN_Y, 50)
+
+# pwm degerleri 2 ile 12 arasi olur
+# servoX.start(7)
+# servoY.start(4)
+
+pwm_X = 7
+pwm_Y = 4
+
+# Load Yolo
+net = cv2.dnn.readNet("yolov4-tiny.weights", "yolov4-tiny.cfg")
+classes = []
+with open("coco.names", "r") as f:
+    classes = [line.strip() for line in f.readlines()]
+layer_names = net.getLayerNames()
+output_layers = [layer_names[i - 1] for i in net.getUnconnectedOutLayers()]
+colors = np.random.uniform(0, 255, size=(len(classes), 3))
+
+# Configure Camera
+width = 720
+height = 720
+picam2 = Picamera2()
+picam2.configure(picam2.create_preview_configuration(main={"format": 'RGB888', "size": (width, height)}))
+picam2.start()
+
+font = cv2.FONT_HERSHEY_PLAIN
+starting_time = time.time()
+frame_id = 0
+while True:
+    frame = picam2.capture_array()
 
 
 
